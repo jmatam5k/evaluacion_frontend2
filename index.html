@@ -1,0 +1,106 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<title>Examen Herramientas Productividad</title>
+	<link rel="stylesheet" type="text/css" href="node_modules/materialize-css/dist/css/materialize.min.css">
+	<link rel="stylesheet" type="text/css" href="node_modules/font-awesome/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="dist/css/main.min.css">
+	<!--REQUIRED STYLE SHEETS-->
+</head>
+<body>
+	<nav>
+		<div class="nav-wrapper">
+			<a href="#" class="">
+				<img class="logo-size" src="dist/img/logo-gris.jpg">
+			</a>
+			<ul id="nav-mobile" class="right hide-on-med-and-down">
+				<a class="btn tooltipped" data-position="bottom" data-delay="50" data-tooltip="la nueva forma de moverte en la ciudad. con carrocomp! puedes compartir tu viaje con amigos y cobrar el costo equivalente.">Hover me!</a> 
+			</ul>
+		</div>
+	</nav>
+	<div id="map"></div>
+	<div id="formContent" class="form-content" method="post" action="">
+		<label>ORIGEN</label>
+		<select id="start" name="start" class="browser-default btnselected">
+			<option value="">Escoge una ciudad</option>
+			<option value="Santiago">Santiago</option>
+			<option value="Antofagasta">Antofagasta</option>
+			<option value="Arica">Arica</option>
+			<option value="Calama">Calama</option>
+			<option value="Concepción">Concepción</option>
+			<option value="Coyhaique">Coyhaique</option>
+			<option value="Iquique">Iquique</option>
+			<option value="La Serena">La Serena</option>
+			<option value="Punta Arenas">Punta Arenas</option>
+			<option value="Puerto Montt">Puerto Montt</option>
+			<option value="Rancagua">Rancagua</option>
+			<option value="Talca">Talca</option>
+			<option value="Temuco">Temuco</option>
+			<option value="Valdivia">Valdivia</option>
+			<option value="Valparaiso">Valparaiso</option>
+		</select>
+		<label>DESTINO</label>
+
+		<select id="end" name="end" class="browser-default btnselected" >
+			<option value="">Escoge una ciudad</option>
+			<option value="Santiago">Santiago</option>
+			<option value="Antofagasta">Antofagasta</option>
+			<option value="Arica">Arica</option>
+			<option value="Calama">Calama</option>
+			<option value="Concepción">Concepción</option>
+			<option value="Coyhaique">Coyhaique</option>
+			<option value="Iquique">Iquique</option>
+			<option value="La Serena">La Serena</option>
+			<option value="Punta Arenas">Punta Arenas</option>
+			<option value="Puerto Montt">Puerto Montt</option>
+			<option value="Rancagua">Rancagua</option>
+			<option value="Talca">Talca</option>
+			<option value="Temuco">Temuco</option>
+			<option value="Valdivia">Valdivia</option>
+			<option value="Valparaiso">Valparaiso</option>
+		</select>
+		<br>
+		<input type="submit" name="submit" id="botonciudad" disabled="disable" class="btn waves-effect waves-light">
+		
+	</div>
+	<br>
+	<!--PASO DOS-->
+	<div class="form-content hide" id="tipovehiculo">
+		<p>VEHICULO</p>
+		<p>Selecciona</p>
+		<p>
+			<input name="group1" type="radio" id="test1" />
+			<label for="test1">Moto</label>
+		</p>
+		<p>
+			<input name="group1" type="radio" id="test2" />
+			<label for="test2">Automóvil</label>
+		</p>
+		<p>
+			<input class="group1" name="group1" type="radio" id="test3"  />
+			<label for="test3">Minivan</label>
+		</p>
+		<p>
+			<input name="group1" type="radio" id="test4" />
+			<label for="test4">Camión</label>
+		</p>
+	</div>
+
+	
+	<script async defer
+	src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCYz4QYDtE61PYAY3CUI8Tb2heOAxGYXhQ&callback=initMap">
+</script>
+
+
+
+<!--<script type="text/javascript" src="node_modules/materialize-css/dist/js/materialize.min.js"></script>-->
+<script type="text/javascript" src="node_modules/materialize-css/node_modules/jquery/dist/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
+
+<script type="text/javascript" src="dist/js/script.min.js"></script>
+
+</body>
+</html>
+

@@ -1,0 +1,28 @@
+﻿@import '_variables.scss';
+
+.nav-wrapper{
+	background-color: $blanco;
+	.logo-size{
+		height: 64px;
+	}
+}
+#map{
+	height: $maxsize;
+}
+.form-content{
+	position: relative;
+	top: -82vh;
+	width: 300px;
+	margin: 0 50px;
+	background: $blanco;
+	padding: 20px;
+}
+.btn, .btn:hover{
+	background-color: $orange;
+}
+button{
+	width: $maxsizewidth;
+}
+[type="radio"]:checked+label:after, [type="radio"].with-gap:checked+label{
+	background-color: $orange;
+}

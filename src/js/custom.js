@@ -16,11 +16,11 @@ $(document).ready(function(){
 	});
 
 	//validar checks y habilitar boton vehiculos
-	$('.check').change(function() {
-		if ($('.check:checked').length) {
-			$('#btn-transport').removeAttr('disabled');
+	$('.group1').change(function() {
+		if ($('.group1:checked').length) {
+			$('#botonvehiculo').removeAttr('disabled');
 		} else {
-			$('#btn-transport').attr('disabled', 'disabled');
+			$('#botonvehiculo').attr('disabled', 'disabled');
 		}
 	});
 	

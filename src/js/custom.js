@@ -2,12 +2,12 @@ $(document).ready(function(){
 	//tooltip
 	$('.tooltipped').tooltip({delay: 50});
 
-
+	//boton mostrar paso 2
 	$("#botonciudad").on('click', function(){
 		$("#tipovehiculo").removeClass('hide');
 		console.log("click");
 	})
-
+	//validar selects y habilitar boton ciudad
 	$(function() {
 		$('.btnselected').on('change', function() {
 			var $sels = $('.btnselected option:selected[value=""]');
@@ -15,7 +15,7 @@ $(document).ready(function(){
 		}).change();
 	});
 
-
+	//validar checks y habilitar boton vehiculos
 	$('.check').change(function() {
 		if ($('.check:checked').length) {
 			$('#btn-transport').removeAttr('disabled');
